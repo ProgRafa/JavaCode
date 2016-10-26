@@ -1,0 +1,120 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package anagramas;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ *
+ * @author Rafael
+ */
+public class Anagram {
+    public static char[] anagrams;
+    public static char[] modifyAnagram;
+    public static String[] wordsAnagram;
+    public static int result = 1;
+    public static int countString = 0;
+    static int funcFat = 0;
+    int realSize;
+    
+    /**
+     * @param args the command line arguments
+     * @throws java.io.IOException
+     */
+    public static void main(String[] args) throws IOException {
+        // TODO code application logic here
+        System.out.print("Digite uma palavra de até 10 caracteres: ");
+        String word = getString();
+        int size = word.length();
+
+        Anagram an = new Anagram(size, word.toCharArray());
+
+        an.funcaoFat(size);
+
+        System.out.println();
+        for(int i = 1; i < wordsAnagram.length+1; i++){
+            if(wordsAnagram[i-1] == null)
+                break;
+            System.out.print("Palavra "+i+": "+wordsAnagram[i-1]);
+            System.out.print("  ");
+            if(i % 6 == 0)
+                System.out.println("");
+        }
+    }
+    
+    public Anagram(int size, char[]word){
+        realSize = size;
+        anagrams = word;
+        SizeFat(size);
+        wordsAnagram = new String[result];
+        System.out.println(wordsAnagram.length);
+        System.out.println(wordsAnagram[0]);
+    }
+    
+    public void funcaoFat(int measure){
+        if(measure == 1)        
+            return;
+        
+        for(int maxFat = 0; maxFat < measure; maxFat++){
+            funcaoFat(measure - 1);
+            
+            String neWord = Dancer(measure);
+            
+            if(!getOut(neWord)){
+                wordsAnagram[countString] = neWord;
+                countString++;
+            }
+        } 
+    }
+    
+    public String Dancer(int measure){
+        int i;
+        int maxDance = realSize - measure;
+        char dancer = anagrams[maxDance];
+        
+        for(i = maxDance; i < realSize - 1; i++){
+            anagrams[i] = anagrams[i+1];
+        }
+        anagrams[i] = dancer;
+        
+        return String.copyValueOf(anagrams);
+    }
+    
+    //calcula o tamanho necessário do array de strings wordsAnagram 
+
+    /**
+     *
+     * @param size
+     */
+    public static void SizeFat(int size){
+        if(size == 1)
+            return;
+        
+        SizeFat(size - 1);
+        result *= size;
+    }
+    
+    public static String getString() throws IOException {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+        String s = br.readLine();
+        return s;
+    }
+    
+    public static boolean getOut(String compare){
+        for (String wordsAnagram1 : wordsAnagram) {
+            if (compare.equals(wordsAnagram1)) {
+                return true;
+            }
+            if(wordsAnagram1 == null)
+                return false;
+        }
+        
+        return false;
+    }
+}
