@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class challenge.RestaurantIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class challenge.RestaurantIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/challenge.html">challenge</a> &gt; RestaurantIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.223s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testLoadedFromRedis"></a>
+<h3 class="failures">testLoadedFromRedis</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting:
+  &lt;challenge.NeighborhoodRedisTest@5c36c870&gt;
+to be equal to:
+  &lt;challenge.NeighborhoodRedisTest@6952571a&gt;
+when recursively comparing field by field, but found the following difference(s):
+
+Path to difference: &lt;restaurants&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;[challenge.RestaurantRedisTest@36fd8af4]&gt;
+
+Path to difference: &lt;name&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;&quot;East Harlem South&quot;&gt;
+
+Path to difference: &lt;id&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;&quot;55cb9c666c522cafdb053a89&quot;&gt;
+	at challenge.RestaurantIntegrationTest.testLoadedFromRedis(RestaurantIntegrationTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testSavedInRedis"></a>
+<h3 class="failures">testSavedInRedis</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting:
+  &lt;challenge.NeighborhoodRedisTest@570282&gt;
+to be equal to:
+  &lt;challenge.NeighborhoodRedisTest@696586ea&gt;
+when recursively comparing field by field, but found the following difference(s):
+
+Path to difference: &lt;restaurants&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;[challenge.RestaurantRedisTest@5c0f650e,
+    challenge.RestaurantRedisTest@53c32d5,
+    challenge.RestaurantRedisTest@71568a30,
+    challenge.RestaurantRedisTest@1d81e856,
+    challenge.RestaurantRedisTest@3a01d9fd,
+    challenge.RestaurantRedisTest@5e4ffef2,
+    challenge.RestaurantRedisTest@1b8df801,
+    challenge.RestaurantRedisTest@95c707e,
+    challenge.RestaurantRedisTest@3d269e99,
+    challenge.RestaurantRedisTest@1cbf4fa1,
+    challenge.RestaurantRedisTest@6806f1c7,
+    challenge.RestaurantRedisTest@2b3b339,
+    challenge.RestaurantRedisTest@b6827a0,
+    challenge.RestaurantRedisTest@6d4cb32b,
+    challenge.RestaurantRedisTest@321bff8c,
+    challenge.RestaurantRedisTest@2d2eb88d,
+    challenge.RestaurantRedisTest@67b1dfaf,
+    challenge.RestaurantRedisTest@6f6ced99,
+    challenge.RestaurantRedisTest@2e69867,
+    challenge.RestaurantRedisTest@5ad4a266,
+    challenge.RestaurantRedisTest@33715234,
+    challenge.RestaurantRedisTest@3b7971e6,
+    challenge.RestaurantRedisTest@d6af34e,
+    challenge.RestaurantRedisTest@72d2a717,
+    challenge.RestaurantRedisTest@4b8bbb8b,
+    challenge.RestaurantRedisTest@3b8d155d,
+    challenge.RestaurantRedisTest@612761e1,
+    challenge.RestaurantRedisTest@62a98cd,
+    challenge.RestaurantRedisTest@10eb3c60,
+    challenge.RestaurantRedisTest@439fe4dd,
+    challenge.RestaurantRedisTest@19edad26,
+    challenge.RestaurantRedisTest@4bd3b226,
+    challenge.RestaurantRedisTest@2929f00,
+    challenge.RestaurantRedisTest@3e973a83,
+    challenge.RestaurantRedisTest@4a6724ea,
+    challenge.RestaurantRedisTest@1c73ed02,
+    challenge.RestaurantRedisTest@a0f1b13,
+    challenge.RestaurantRedisTest@dcb7bf3,
+    challenge.RestaurantRedisTest@7ef85ed4,
+    challenge.RestaurantRedisTest@7d60a7f4,
+    challenge.RestaurantRedisTest@fc5fcc8,
+    challenge.RestaurantRedisTest@59070a20,
+    challenge.RestaurantRedisTest@6535e12a,
+    challenge.RestaurantRedisTest@1d12a57f,
+    challenge.RestaurantRedisTest@3d1129a9,
+    challenge.RestaurantRedisTest@5ca66221,
+    challenge.RestaurantRedisTest@16d0e42e,
+    challenge.RestaurantRedisTest@1ee182d6,
+    challenge.RestaurantRedisTest@2a89bcc2,
+    challenge.RestaurantRedisTest@455164d8,
+    challenge.RestaurantRedisTest@543109c8,
+    challenge.RestaurantRedisTest@46d4d6aa,
+    challenge.RestaurantRedisTest@21dc0d1e,
+    challenge.RestaurantRedisTest@6f65ca59,
+    challenge.RestaurantRedisTest@3346f134,
+    challenge.RestaurantRedisTest@53471070,
+    challenge.RestaurantRedisTest@12b253fb,
+    challenge.RestaurantRedisTest@53c464f6,
+    challenge.RestaurantRedisTest@570ff0eb,
+    challenge.RestaurantRedisTest@3ca0aeea,
+    challenge.RestaurantRedisTest@3c0d0f0e,
+    challenge.RestaurantRedisTest@4c9e2fad,
+    challenge.RestaurantRedisTest@643e167d,
+    challenge.RestaurantRedisTest@5dd023ee,
+    challenge.RestaurantRedisTest@9713225,
+    challenge.RestaurantRedisTest@34af97e1,
+    challenge.RestaurantRedisTest@2036e2f7,
+    challenge.RestaurantRedisTest@7ca57a4c,
+    challenge.RestaurantRedisTest@7cc58fe7,
+    challenge.RestaurantRedisTest@349d1f01,
+    challenge.RestaurantRedisTest@232b723f,
+    challenge.RestaurantRedisTest@740b1b0c,
+    challenge.RestaurantRedisTest@246118dd,
+    challenge.RestaurantRedisTest@78587e47,
+    challenge.RestaurantRedisTest@9a51f9,
+    challenge.RestaurantRedisTest@2c65e99d,
+    challenge.RestaurantRedisTest@6eab3c,
+    challenge.RestaurantRedisTest@3bff4730,
+    challenge.RestaurantRedisTest@69b8cc2f,
+    challenge.RestaurantRedisTest@6a12e984,
+    challenge.RestaurantRedisTest@1f5088b1,
+    challenge.RestaurantRedisTest@5e579aac,
+    challenge.RestaurantRedisTest@7121fcfd,
+    challenge.RestaurantRedisTest@c027594,
+    challenge.RestaurantRedisTest@170c71a5,
+    challenge.RestaurantRedisTest@756c1b12,
+    challenge.RestaurantRedisTest@b54c756,
+    challenge.RestaurantRedisTest@1465ad7d,
+    challenge.RestaurantRedisTest@6010770d,
+    challenge.RestaurantRedisTest@75b15496,
+    challenge.RestaurantRedisTest@58f25301,
+    challenge.RestaurantRedisTest@61c50327,
+    challenge.RestaurantRedisTest@20ea80d,
+    challenge.RestaurantRedisTest@7d64493e,
+    challenge.RestaurantRedisTest@374467c8,
+    challenge.RestaurantRedisTest@7e51963c,
+    challenge.RestaurantRedisTest@9e8173b,
+    challenge.RestaurantRedisTest@561a9281,
+    challenge.RestaurantRedisTest@42f4c5ad,
+    challenge.RestaurantRedisTest@30e64bb9,
+    challenge.RestaurantRedisTest@797ed351,
+    challenge.RestaurantRedisTest@7b72d865,
+    challenge.RestaurantRedisTest@1fcfa30b,
+    challenge.RestaurantRedisTest@1d7698c8,
+    challenge.RestaurantRedisTest@129d246c,
+    challenge.RestaurantRedisTest@7fc167aa,
+    challenge.RestaurantRedisTest@1d7454a2,
+    challenge.RestaurantRedisTest@346d2f1c,
+    challenge.RestaurantRedisTest@4f28d3b9,
+    challenge.RestaurantRedisTest@3b2001c1,
+    challenge.RestaurantRedisTest@4ce9343,
+    challenge.RestaurantRedisTest@59864909,
+    challenge.RestaurantRedisTest@50baec9b,
+    challenge.RestaurantRedisTest@6bafd144,
+    challenge.RestaurantRedisTest@1b8b13f9,
+    challenge.RestaurantRedisTest@702ecf80,
+    challenge.RestaurantRedisTest@77f73b2a,
+    challenge.RestaurantRedisTest@6247f161,
+    challenge.RestaurantRedisTest@2190320b,
+    challenge.RestaurantRedisTest@2744bb76,
+    challenge.RestaurantRedisTest@6924fadf,
+    challenge.RestaurantRedisTest@34b5c263,
+    challenge.RestaurantRedisTest@1495ae94,
+    challenge.RestaurantRedisTest@1608387b,
+    challenge.RestaurantRedisTest@58b4ca67,
+    challenge.RestaurantRedisTest@4288bdc8,
+    challenge.RestaurantRedisTest@7bd04a03,
+    challenge.RestaurantRedisTest@2c4c6ee2,
+    challenge.RestaurantRedisTest@52557efe,
+    challenge.RestaurantRedisTest@55b4ff81,
+    challenge.RestaurantRedisTest@2ccd2766,
+    challenge.RestaurantRedisTest@63b97763,
+    challenge.RestaurantRedisTest@1a624764,
+    challenge.RestaurantRedisTest@68d8eb5e,
+    challenge.RestaurantRedisTest@2deb0734,
+    challenge.RestaurantRedisTest@5c17f85,
+    challenge.RestaurantRedisTest@d10513e,
+    challenge.RestaurantRedisTest@223dc9d9,
+    challenge.RestaurantRedisTest@571aa80d,
+    challenge.RestaurantRedisTest@59a9c83c,
+    challenge.RestaurantRedisTest@56bfeb96,
+    challenge.RestaurantRedisTest@1a809399,
+    challenge.RestaurantRedisTest@18580a04,
+    challenge.RestaurantRedisTest@f27d91b,
+    challenge.RestaurantRedisTest@266d6032,
+    challenge.RestaurantRedisTest@386f333d,
+    challenge.RestaurantRedisTest@603f061e,
+    challenge.RestaurantRedisTest@51e1f403,
+    challenge.RestaurantRedisTest@1c4072fd,
+    challenge.RestaurantRedisTest@5d775c93,
+    challenge.RestaurantRedisTest@4560bed5,
+    challenge.RestaurantRedisTest@1bff0b96,
+    challenge.RestaurantRedisTest@437458e,
+    challenge.RestaurantRedisTest@63c3125f,
+    challenge.RestaurantRedisTest@23959ee4,
+    challenge.RestaurantRedisTest@40d592bb,
+    challenge.RestaurantRedisTest@7e70b41a,
+    challenge.RestaurantRedisTest@55a1061,
+    challenge.RestaurantRedisTest@a37dc90,
+    challenge.RestaurantRedisTest@669bc727,
+    challenge.RestaurantRedisTest@1d307f8a,
+    challenge.RestaurantRedisTest@48bcbd55,
+    challenge.RestaurantRedisTest@7c5b3b8e,
+    challenge.RestaurantRedisTest@444169dd,
+    challenge.RestaurantRedisTest@5a1392f0,
+    challenge.RestaurantRedisTest@77e8daf2,
+    challenge.RestaurantRedisTest@52ca08ca,
+    challenge.RestaurantRedisTest@1d0a8ccf,
+    challenge.RestaurantRedisTest@5b48098c,
+    challenge.RestaurantRedisTest@6ac6775d,
+    challenge.RestaurantRedisTest@6848be97,
+    challenge.RestaurantRedisTest@21ed3ba5,
+    challenge.RestaurantRedisTest@3af2527d,
+    challenge.RestaurantRedisTest@6357b6e1,
+    challenge.RestaurantRedisTest@4e46101a,
+    challenge.RestaurantRedisTest@63e3a64,
+    challenge.RestaurantRedisTest@2ef7e164,
+    challenge.RestaurantRedisTest@7049aae5,
+    challenge.RestaurantRedisTest@ef1b236,
+    challenge.RestaurantRedisTest@79eb5496,
+    challenge.RestaurantRedisTest@6806660e,
+    challenge.RestaurantRedisTest@55a5f769,
+    challenge.RestaurantRedisTest@56c68fe9,
+    challenge.RestaurantRedisTest@75aa3e43,
+    challenge.RestaurantRedisTest@2ec700ee,
+    challenge.RestaurantRedisTest@5423b4e0,
+    challenge.RestaurantRedisTest@3678c04a,
+    challenge.RestaurantRedisTest@1284a8e0,
+    challenge.RestaurantRedisTest@4d21a2e,
+    challenge.RestaurantRedisTest@4d1f3ae0,
+    challenge.RestaurantRedisTest@3d15c999,
+    challenge.RestaurantRedisTest@ae1b573,
+    challenge.RestaurantRedisTest@1ef6cd6b,
+    challenge.RestaurantRedisTest@2a0a2c6f,
+    challenge.RestaurantRedisTest@394061b6,
+    challenge.RestaurantRedisTest@3e8d11c0,
+    challenge.RestaurantRedisTest@16381eef,
+    challenge.RestaurantRedisTest@6daa2113,
+    challenge.RestaurantRedisTest@575da0c1,
+    challenge.RestaurantRedisTest@108b8fb,
+    challenge.RestaurantRedisTest@57111153,
+    challenge.RestaurantRedisTest@6b0f101b,
+    challenge.RestaurantRedisTest@51eeee13,
+    challenge.RestaurantRedisTest@15655bb5,
+    challenge.RestaurantRedisTest@4aa15bc3,
+    challenge.RestaurantRedisTest@593d0544,
+    challenge.RestaurantRedisTest@7f05f606,
+    challenge.RestaurantRedisTest@4002b2a0,
+    challenge.RestaurantRedisTest@bd9620,
+    challenge.RestaurantRedisTest@319ba456,
+    challenge.RestaurantRedisTest@617ed1a5,
+    challenge.RestaurantRedisTest@343cf898,
+    challenge.RestaurantRedisTest@58dc74a9,
+    challenge.RestaurantRedisTest@3489d2f0,
+    challenge.RestaurantRedisTest@23edce3d,
+    challenge.RestaurantRedisTest@70460ae0,
+    challenge.RestaurantRedisTest@4b84417d,
+    challenge.RestaurantRedisTest@316014af,
+    challenge.RestaurantRedisTest@7cb1a898,
+    challenge.RestaurantRedisTest@3ce0bce4,
+    challenge.RestaurantRedisTest@55869dac,
+    challenge.RestaurantRedisTest@64722edf,
+    challenge.RestaurantRedisTest@1576afa1,
+    challenge.RestaurantRedisTest@2c483677,
+    challenge.RestaurantRedisTest@4dc2a5af,
+    challenge.RestaurantRedisTest@38b36e1e,
+    challenge.RestaurantRedisTest@1818d50e,
+    challenge.RestaurantRedisTest@758ea3f4,
+    challenge.RestaurantRedisTest@2db99f37,
+    challenge.RestaurantRedisTest@e59d700,
+    challenge.RestaurantRedisTest@5037d360,
+    challenge.RestaurantRedisTest@50a64b91,
+    challenge.RestaurantRedisTest@31872695,
+    challenge.RestaurantRedisTest@71261672,
+    challenge.RestaurantRedisTest@1f6467e5,
+    challenge.RestaurantRedisTest@7dfc4d5b,
+    challenge.RestaurantRedisTest@75476fff,
+    challenge.RestaurantRedisTest@349362a3,
+    challenge.RestaurantRedisTest@874609b,
+    challenge.RestaurantRedisTest@17fd625b,
+    challenge.RestaurantRedisTest@590bcfcc,
+    challenge.RestaurantRedisTest@76a22834,
+    challenge.RestaurantRedisTest@5d79fec3,
+    challenge.RestaurantRedisTest@216aa08d,
+    challenge.RestaurantRedisTest@26986ec3,
+    challenge.RestaurantRedisTest@419c01ac,
+    challenge.RestaurantRedisTest@538170ba,
+    challenge.RestaurantRedisTest@271bdc8f,
+    challenge.RestaurantRedisTest@421050d9,
+    challenge.RestaurantRedisTest@63a0a856,
+    challenge.RestaurantRedisTest@3bfc0038,
+    challenge.RestaurantRedisTest@427a5c6c,
+    challenge.RestaurantRedisTest@22c5a62,
+    challenge.RestaurantRedisTest@64a8b069,
+    challenge.RestaurantRedisTest@3f8e9104,
+    challenge.RestaurantRedisTest@2f8733a5,
+    challenge.RestaurantRedisTest@4f98937d,
+    challenge.RestaurantRedisTest@6e12491f,
+    challenge.RestaurantRedisTest@255fe368,
+    challenge.RestaurantRedisTest@33d3f67d,
+    challenge.RestaurantRedisTest@385b8801,
+    challenge.RestaurantRedisTest@447d74a4,
+    challenge.RestaurantRedisTest@1e638be0,
+    challenge.RestaurantRedisTest@32afe64f,
+    challenge.RestaurantRedisTest@56d07b9b,
+    challenge.RestaurantRedisTest@7927fdb1,
+    challenge.RestaurantRedisTest@7b9945fe,
+    challenge.RestaurantRedisTest@3649595c,
+    challenge.RestaurantRedisTest@6390e0ad,
+    challenge.RestaurantRedisTest@251c531b,
+    challenge.RestaurantRedisTest@149b54f3,
+    challenge.RestaurantRedisTest@68e46c85,
+    challenge.RestaurantRedisTest@c956cbc,
+    challenge.RestaurantRedisTest@4bd662be,
+    challenge.RestaurantRedisTest@5248bfb,
+    challenge.RestaurantRedisTest@4e6f4f9e,
+    challenge.RestaurantRedisTest@69382a63,
+    challenge.RestaurantRedisTest@11837668,
+    challenge.RestaurantRedisTest@30d95cf0,
+    challenge.RestaurantRedisTest@47ef6ca,
+    challenge.RestaurantRedisTest@2cbdbf14,
+    challenge.RestaurantRedisTest@2687bcdd,
+    challenge.RestaurantRedisTest@5c435a21,
+    challenge.RestaurantRedisTest@2ff82fc5,
+    challenge.RestaurantRedisTest@6e7c6031,
+    challenge.RestaurantRedisTest@75065877,
+    challenge.RestaurantRedisTest@335296a4,
+    challenge.RestaurantRedisTest@5dba010c,
+    challenge.RestaurantRedisTest@504a8f62,
+    challenge.RestaurantRedisTest@17c8a0fc,
+    challenge.RestaurantRedisTest@3008f317,
+    challenge.RestaurantRedisTest@3db7267b,
+    challenge.RestaurantRedisTest@39828f30,
+    challenge.RestaurantRedisTest@6b1f07bc,
+    challenge.RestaurantRedisTest@1cf8d183,
+    challenge.RestaurantRedisTest@18f8a899,
+    challenge.RestaurantRedisTest@352e4fb9,
+    challenge.RestaurantRedisTest@269f9c47,
+    challenge.RestaurantRedisTest@7c3125de,
+    challenge.RestaurantRedisTest@21d0e6a1,
+    challenge.RestaurantRedisTest@664426a5,
+    challenge.RestaurantRedisTest@3ce3f38e,
+    challenge.RestaurantRedisTest@49892e19,
+    challenge.RestaurantRedisTest@6f4a3c67,
+    challenge.RestaurantRedisTest@287c5e25,
+    challenge.RestaurantRedisTest@ba0b727,
+    challenge.RestaurantRedisTest@bd9a9ac,
+    challenge.RestaurantRedisTest@35ce15b4,
+    challenge.RestaurantRedisTest@7f09e85e,
+    challenge.RestaurantRedisTest@711e7117,
+    challenge.RestaurantRedisTest@37cc2251,
+    challenge.RestaurantRedisTest@72eaf2a9,
+    challenge.RestaurantRedisTest@4291afb2,
+    challenge.RestaurantRedisTest@4085f83e,
+    challenge.RestaurantRedisTest@160d94d5,
+    challenge.RestaurantRedisTest@33574307,
+    challenge.RestaurantRedisTest@7c7486e0,
+    challenge.RestaurantRedisTest@13dfc558,
+    challenge.RestaurantRedisTest@698e40ca,
+    challenge.RestaurantRedisTest@60c87987,
+    challenge.RestaurantRedisTest@3853b0f8,
+    challenge.RestaurantRedisTest@55cb57af,
+    challenge.RestaurantRedisTest@4e58d5cc,
+    challenge.RestaurantRedisTest@6d7f89c1,
+    challenge.RestaurantRedisTest@488e30e6,
+    challenge.RestaurantRedisTest@47777077,
+    challenge.RestaurantRedisTest@4f893be0,
+    challenge.RestaurantRedisTest@5ea98251,
+    challenge.RestaurantRedisTest@67198062,
+    challenge.RestaurantRedisTest@1b11a03e,
+    challenge.RestaurantRedisTest@1d41ce87,
+    challenge.RestaurantRedisTest@fe87c74,
+    challenge.RestaurantRedisTest@24d9f77b,
+    challenge.RestaurantRedisTest@325fb38e,
+    challenge.RestaurantRedisTest@217966b4,
+    challenge.RestaurantRedisTest@6d3ea533,
+    challenge.RestaurantRedisTest@6b7f5c0,
+    challenge.RestaurantRedisTest@493bf55b,
+    challenge.RestaurantRedisTest@231d760e,
+    challenge.RestaurantRedisTest@3b125863,
+    challenge.RestaurantRedisTest@2b2b334,
+    challenge.RestaurantRedisTest@14b51f14,
+    challenge.RestaurantRedisTest@5cd0b68a,
+    challenge.RestaurantRedisTest@75a83c33,
+    challenge.RestaurantRedisTest@62940aa1,
+    challenge.RestaurantRedisTest@5e65f458,
+    challenge.RestaurantRedisTest@7586df8,
+    challenge.RestaurantRedisTest@33259084,
+    challenge.RestaurantRedisTest@71264543,
+    challenge.RestaurantRedisTest@10b80b,
+    challenge.RestaurantRedisTest@4463325c,
+    challenge.RestaurantRedisTest@5b5d3be4,
+    challenge.RestaurantRedisTest@18126191,
+    challenge.RestaurantRedisTest@1dc75278,
+    challenge.RestaurantRedisTest@40eb724e,
+    challenge.RestaurantRedisTest@72dbf3ac,
+    challenge.RestaurantRedisTest@794e0a8f,
+    challenge.RestaurantRedisTest@5e3dd34c,
+    challenge.RestaurantRedisTest@45dfb3c7,
+    challenge.RestaurantRedisTest@68346e43,
+    challenge.RestaurantRedisTest@61a71bb8,
+    challenge.RestaurantRedisTest@51300373,
+    challenge.RestaurantRedisTest@69c9c319,
+    challenge.RestaurantRedisTest@22c4ee15,
+    challenge.RestaurantRedisTest@7be75b2e,
+    challenge.RestaurantRedisTest@2a1df4ba,
+    challenge.RestaurantRedisTest@d6b2beb,
+    challenge.RestaurantRedisTest@85ac815,
+    challenge.RestaurantRedisTest@49a5dc1b,
+    challenge.RestaurantRedisTest@cd859b1,
+    challenge.RestaurantRedisTest@58381fb2,
+    challenge.RestaurantRedisTest@6fc7ec0,
+    challenge.RestaurantRedisTest@615e3f00,
+    challenge.RestaurantRedisTest@2f85e74b,
+    challenge.RestaurantRedisTest@3758a886,
+    challenge.RestaurantRedisTest@52b7dad3,
+    challenge.RestaurantRedisTest@420159ba,
+    challenge.RestaurantRedisTest@42be410e,
+    challenge.RestaurantRedisTest@3050dd47,
+    challenge.RestaurantRedisTest@5c5df8dc,
+    challenge.RestaurantRedisTest@1459b664,
+    challenge.RestaurantRedisTest@24df23d0,
+    challenge.RestaurantRedisTest@12d368e9,
+    challenge.RestaurantRedisTest@21fbe977,
+    challenge.RestaurantRedisTest@784881ba,
+    challenge.RestaurantRedisTest@25d4fcc0,
+    challenge.RestaurantRedisTest@2cc95cb3,
+    challenge.RestaurantRedisTest@5207b80c,
+    challenge.RestaurantRedisTest@6efea6a7,
+    challenge.RestaurantRedisTest@6cce7544,
+    challenge.RestaurantRedisTest@a8480aa,
+    challenge.RestaurantRedisTest@652c8e2e,
+    challenge.RestaurantRedisTest@7efcc7b2,
+    challenge.RestaurantRedisTest@6107e97c,
+    challenge.RestaurantRedisTest@4f28b426,
+    challenge.RestaurantRedisTest@4ef40e13,
+    challenge.RestaurantRedisTest@562d9128,
+    challenge.RestaurantRedisTest@83fde98,
+    challenge.RestaurantRedisTest@23cd23d,
+    challenge.RestaurantRedisTest@6c56d0ff,
+    challenge.RestaurantRedisTest@56c8a88c,
+    challenge.RestaurantRedisTest@20f577d3,
+    challenge.RestaurantRedisTest@443cf4ca,
+    challenge.RestaurantRedisTest@1e37159a,
+    challenge.RestaurantRedisTest@da85218,
+    challenge.RestaurantRedisTest@6e8f791,
+    challenge.RestaurantRedisTest@2551c922,
+    challenge.RestaurantRedisTest@36c93d7,
+    challenge.RestaurantRedisTest@4c1b2930,
+    challenge.RestaurantRedisTest@d0e1b5d,
+    challenge.RestaurantRedisTest@26bdcb07,
+    challenge.RestaurantRedisTest@41a8162c,
+    challenge.RestaurantRedisTest@54eff580,
+    challenge.RestaurantRedisTest@29c6c8b3,
+    challenge.RestaurantRedisTest@61ebdb7f,
+    challenge.RestaurantRedisTest@6073a818,
+    challenge.RestaurantRedisTest@4b9b1263,
+    challenge.RestaurantRedisTest@5407d8f3,
+    challenge.RestaurantRedisTest@6b88d12f,
+    challenge.RestaurantRedisTest@1646872e,
+    challenge.RestaurantRedisTest@55d978f,
+    challenge.RestaurantRedisTest@6f770797,
+    challenge.RestaurantRedisTest@425ba2ff,
+    challenge.RestaurantRedisTest@6086226d,
+    challenge.RestaurantRedisTest@90e301d,
+    challenge.RestaurantRedisTest@5e92d514,
+    challenge.RestaurantRedisTest@4141c863,
+    challenge.RestaurantRedisTest@10050f6c,
+    challenge.RestaurantRedisTest@68735ba9,
+    challenge.RestaurantRedisTest@208109c6,
+    challenge.RestaurantRedisTest@6f4cdf65,
+    challenge.RestaurantRedisTest@570ad38f,
+    challenge.RestaurantRedisTest@25d674d4,
+    challenge.RestaurantRedisTest@d319691,
+    challenge.RestaurantRedisTest@40fc7a5,
+    challenge.RestaurantRedisTest@518fa00,
+    challenge.RestaurantRedisTest@137e4ea3,
+    challenge.RestaurantRedisTest@12fac743,
+    challenge.RestaurantRedisTest@68b20856,
+    challenge.RestaurantRedisTest@2a3827ba,
+    challenge.RestaurantRedisTest@4b526f08,
+    challenge.RestaurantRedisTest@fd669fe,
+    challenge.RestaurantRedisTest@775e30ea,
+    challenge.RestaurantRedisTest@1c30dc4c,
+    challenge.RestaurantRedisTest@4442caed,
+    challenge.RestaurantRedisTest@78e7d202,
+    challenge.RestaurantRedisTest@7e387494,
+    challenge.RestaurantRedisTest@64f005a3,
+    challenge.RestaurantRedisTest@3637ae72,
+    challenge.RestaurantRedisTest@70861d74,
+    challenge.RestaurantRedisTest@4d274b24,
+    challenge.RestaurantRedisTest@299e923e,
+    challenge.RestaurantRedisTest@2251fd41,
+    challenge.RestaurantRedisTest@62fc29c2,
+    challenge.RestaurantRedisTest@157520d2,
+    challenge.RestaurantRedisTest@48274f20,
+    challenge.RestaurantRedisTest@65310890,
+    challenge.RestaurantRedisTest@66809fcd,
+    challenge.RestaurantRedisTest@5a4f407f,
+    challenge.RestaurantRedisTest@28635a59,
+    challenge.RestaurantRedisTest@457ba24d,
+    challenge.RestaurantRedisTest@27e723d8,
+    challenge.RestaurantRedisTest@78bc3e3,
+    challenge.RestaurantRedisTest@3508f0d9,
+    challenge.RestaurantRedisTest@2df945ff,
+    challenge.RestaurantRedisTest@339e5a7b,
+    challenge.RestaurantRedisTest@6ad30330,
+    challenge.RestaurantRedisTest@18afb88b,
+    challenge.RestaurantRedisTest@7f9ec0dc,
+    challenge.RestaurantRedisTest@3e9200d6,
+    challenge.RestaurantRedisTest@4caa4eb7,
+    challenge.RestaurantRedisTest@2924dc49,
+    challenge.RestaurantRedisTest@20356191,
+    challenge.RestaurantRedisTest@e0f51f1,
+    challenge.RestaurantRedisTest@104e7971,
+    challenge.RestaurantRedisTest@1f8739a5,
+    challenge.RestaurantRedisTest@14b5fa2d,
+    challenge.RestaurantRedisTest@6041b193,
+    challenge.RestaurantRedisTest@327d91b,
+    challenge.RestaurantRedisTest@25cb82cb,
+    challenge.RestaurantRedisTest@1e9460cd,
+    challenge.RestaurantRedisTest@73b497a5,
+    challenge.RestaurantRedisTest@4e6677c9,
+    challenge.RestaurantRedisTest@37427914,
+    challenge.RestaurantRedisTest@aedf539,
+    challenge.RestaurantRedisTest@5d33527e,
+    challenge.RestaurantRedisTest@2096be2e,
+    challenge.RestaurantRedisTest@4b8e9f1,
+    challenge.RestaurantRedisTest@61198062,
+    challenge.RestaurantRedisTest@267e8e9d,
+    challenge.RestaurantRedisTest@338c33b2,
+    challenge.RestaurantRedisTest@7038a353,
+    challenge.RestaurantRedisTest@5d8f27a6,
+    challenge.RestaurantRedisTest@fd750ec,
+    challenge.RestaurantRedisTest@5d94f307,
+    challenge.RestaurantRedisTest@6803f1dd,
+    challenge.RestaurantRedisTest@4c15596c,
+    challenge.RestaurantRedisTest@79702032,
+    challenge.RestaurantRedisTest@306f8d0,
+    challenge.RestaurantRedisTest@74fc7c74,
+    challenge.RestaurantRedisTest@124485be,
+    challenge.RestaurantRedisTest@6a4d5674,
+    challenge.RestaurantRedisTest@5e39f395,
+    challenge.RestaurantRedisTest@49313bfa,
+    challenge.RestaurantRedisTest@7fee2e17,
+    challenge.RestaurantRedisTest@7f903968,
+    challenge.RestaurantRedisTest@6ea4c854,
+    challenge.RestaurantRedisTest@2e8ad091,
+    challenge.RestaurantRedisTest@209addc1,
+    challenge.RestaurantRedisTest@5e3febc3,
+    challenge.RestaurantRedisTest@16116e38,
+    challenge.RestaurantRedisTest@6e672a33,
+    challenge.RestaurantRedisTest@186596eb,
+    challenge.RestaurantRedisTest@39a517d7,
+    challenge.RestaurantRedisTest@24d8de75,
+    challenge.RestaurantRedisTest@73395e6f,
+    challenge.RestaurantRedisTest@475f5c2d,
+    challenge.RestaurantRedisTest@5655e0be,
+    challenge.RestaurantRedisTest@349cb777,
+    challenge.RestaurantRedisTest@d6f4dad,
+    challenge.RestaurantRedisTest@306cd619,
+    challenge.RestaurantRedisTest@49c590ba,
+    challenge.RestaurantRedisTest@18b3a1fa,
+    challenge.RestaurantRedisTest@6f469564,
+    challenge.RestaurantRedisTest@39cc5a8b,
+    challenge.RestaurantRedisTest@5c695d48,
+    challenge.RestaurantRedisTest@59d08b4e,
+    challenge.RestaurantRedisTest@266c8a5,
+    challenge.RestaurantRedisTest@5925c260,
+    challenge.RestaurantRedisTest@4f304711,
+    challenge.RestaurantRedisTest@12e73f42,
+    challenge.RestaurantRedisTest@2670fe5b,
+    challenge.RestaurantRedisTest@51b11e37,
+    challenge.RestaurantRedisTest@1c74d3df,
+    challenge.RestaurantRedisTest@3742f23c,
+    challenge.RestaurantRedisTest@16e140a9,
+    challenge.RestaurantRedisTest@4f78b4e4,
+    challenge.RestaurantRedisTest@75a87cff,
+    challenge.RestaurantRedisTest@55dbb364,
+    challenge.RestaurantRedisTest@49a3457e,
+    challenge.RestaurantRedisTest@43f6073a,
+    challenge.RestaurantRedisTest@758fd43f,
+    challenge.RestaurantRedisTest@7dc71979,
+    challenge.RestaurantRedisTest@2e1c3b0a,
+    challenge.RestaurantRedisTest@5da03624,
+    challenge.RestaurantRedisTest@56052f83,
+    challenge.RestaurantRedisTest@13ccf8eb,
+    challenge.RestaurantRedisTest@5c4745f3,
+    challenge.RestaurantRedisTest@8a5949,
+    challenge.RestaurantRedisTest@7f8c17ec,
+    challenge.RestaurantRedisTest@b73b356,
+    challenge.RestaurantRedisTest@6dfd1716,
+    challenge.RestaurantRedisTest@3fef4bf1,
+    challenge.RestaurantRedisTest@20c30897,
+    challenge.RestaurantRedisTest@363ce6da,
+    challenge.RestaurantRedisTest@33fc02ac,
+    challenge.RestaurantRedisTest@760967e1,
+    challenge.RestaurantRedisTest@4eb64e07,
+    challenge.RestaurantRedisTest@1f6d6b3d,
+    challenge.RestaurantRedisTest@4cd7e31e,
+    challenge.RestaurantRedisTest@715cb30a,
+    challenge.RestaurantRedisTest@de61d50,
+    challenge.RestaurantRedisTest@79a6bb52,
+    challenge.RestaurantRedisTest@a9a786b,
+    challenge.RestaurantRedisTest@1e4a5ed1,
+    challenge.RestaurantRedisTest@23fbccd5,
+    challenge.RestaurantRedisTest@6f4b8fd3,
+    challenge.RestaurantRedisTest@36cbfb71,
+    challenge.RestaurantRedisTest@7a3b87af,
+    challenge.RestaurantRedisTest@7db6159,
+    challenge.RestaurantRedisTest@34dd5366,
+    challenge.RestaurantRedisTest@5d2426ff,
+    challenge.RestaurantRedisTest@7b04d40b,
+    challenge.RestaurantRedisTest@2789a39b,
+    challenge.RestaurantRedisTest@7991826f,
+    challenge.RestaurantRedisTest@5fe407c,
+    challenge.RestaurantRedisTest@58076844,
+    challenge.RestaurantRedisTest@32f88da4,
+    challenge.RestaurantRedisTest@478ff36e,
+    challenge.RestaurantRedisTest@3085b643,
+    challenge.RestaurantRedisTest@53a3bd5f,
+    challenge.RestaurantRedisTest@25c08f22,
+    challenge.RestaurantRedisTest@1d6c0c77,
+    challenge.RestaurantRedisTest@469637,
+    challenge.RestaurantRedisTest@4e419a25,
+    challenge.RestaurantRedisTest@6f59b550,
+    challenge.RestaurantRedisTest@122b1378,
+    challenge.RestaurantRedisTest@26e8d824,
+    challenge.RestaurantRedisTest@643aee6e,
+    challenge.RestaurantRedisTest@46eb348c,
+    challenge.RestaurantRedisTest@c914ffa,
+    challenge.RestaurantRedisTest@6c589fb4,
+    challenge.RestaurantRedisTest@5f2255cf,
+    challenge.RestaurantRedisTest@40f255f3,
+    challenge.RestaurantRedisTest@469a2c88,
+    challenge.RestaurantRedisTest@6e17aed0,
+    challenge.RestaurantRedisTest@235612f0,
+    challenge.RestaurantRedisTest@71d986a4,
+    challenge.RestaurantRedisTest@66300a7b,
+    challenge.RestaurantRedisTest@35025943,
+    challenge.RestaurantRedisTest@26501c81,
+    challenge.RestaurantRedisTest@1b815249,
+    challenge.RestaurantRedisTest@7d84e090,
+    challenge.RestaurantRedisTest@5aeb6622,
+    challenge.RestaurantRedisTest@7cf9ddea,
+    challenge.RestaurantRedisTest@6dfbdb26,
+    challenge.RestaurantRedisTest@37213669,
+    challenge.RestaurantRedisTest@367a9cd9,
+    challenge.RestaurantRedisTest@4de1171,
+    challenge.RestaurantRedisTest@374fd827,
+    challenge.RestaurantRedisTest@9e322d9,
+    challenge.RestaurantRedisTest@6b1dfb68,
+    challenge.RestaurantRedisTest@1fbc2ae3,
+    challenge.RestaurantRedisTest@56fb47d3,
+    challenge.RestaurantRedisTest@469e423f,
+    challenge.RestaurantRedisTest@425c373f,
+    challenge.RestaurantRedisTest@3c49e6a5,
+    challenge.RestaurantRedisTest@3080eb20,
+    challenge.RestaurantRedisTest@4bbc8b5,
+    challenge.RestaurantRedisTest@27fde2d2,
+    challenge.RestaurantRedisTest@54724446,
+    challenge.RestaurantRedisTest@631c7c03,
+    challenge.RestaurantRedisTest@3938feb5,
+    challenge.RestaurantRedisTest@719b6032,
+    challenge.RestaurantRedisTest@370d4a33,
+    challenge.RestaurantRedisTest@37f1c4b5,
+    challenge.RestaurantRedisTest@49c249a8,
+    challenge.RestaurantRedisTest@63f22a52,
+    challenge.RestaurantRedisTest@3e73b8cd,
+    challenge.RestaurantRedisTest@79e07da,
+    challenge.RestaurantRedisTest@5c4a8188,
+    challenge.RestaurantRedisTest@2e9890e9,
+    challenge.RestaurantRedisTest@d8ef027,
+    challenge.RestaurantRedisTest@7ad9969b,
+    challenge.RestaurantRedisTest@72971e89,
+    challenge.RestaurantRedisTest@1862d7ea,
+    challenge.RestaurantRedisTest@62970309,
+    challenge.RestaurantRedisTest@544c2c8e,
+    challenge.RestaurantRedisTest@1ee503d8,
+    challenge.RestaurantRedisTest@10b65a69,
+    challenge.RestaurantRedisTest@4ae38c3d,
+    challenge.RestaurantRedisTest@7f7ef1b3,
+    challenge.RestaurantRedisTest@49b3d647,
+    challenge.RestaurantRedisTest@6bf4b80a,
+    challenge.RestaurantRedisTest@3d20432d,
+    challenge.RestaurantRedisTest@35dbce53,
+    challenge.RestaurantRedisTest@628d3741,
+    challenge.RestaurantRedisTest@2cf7f7f2,
+    challenge.RestaurantRedisTest@1371f06a,
+    challenge.RestaurantRedisTest@78b30d01,
+    challenge.RestaurantRedisTest@730f0a69,
+    challenge.RestaurantRedisTest@60543b9d,
+    challenge.RestaurantRedisTest@7c3a755d,
+    challenge.RestaurantRedisTest@1c01a4de,
+    challenge.RestaurantRedisTest@17d6a975,
+    challenge.RestaurantRedisTest@561ff0c1,
+    challenge.RestaurantRedisTest@7920f7c2,
+    challenge.RestaurantRedisTest@68969b6c,
+    challenge.RestaurantRedisTest@4aa90a0a,
+    challenge.RestaurantRedisTest@63997266,
+    challenge.RestaurantRedisTest@1df90730,
+    challenge.RestaurantRedisTest@4168a218,
+    challenge.RestaurantRedisTest@43130965,
+    challenge.RestaurantRedisTest@6bb15923,
+    challenge.RestaurantRedisTest@3e2413e2,
+    challenge.RestaurantRedisTest@3a580e5c,
+    challenge.RestaurantRedisTest@615b7053,
+    challenge.RestaurantRedisTest@c2451a,
+    challenge.RestaurantRedisTest@1e67ede3,
+    challenge.RestaurantRedisTest@64b73a9d,
+    challenge.RestaurantRedisTest@5ed407b0,
+    challenge.RestaurantRedisTest@4cac63e5,
+    challenge.RestaurantRedisTest@6d059766,
+    challenge.RestaurantRedisTest@30bb3b89,
+    challenge.RestaurantRedisTest@4e2c53a9,
+    challenge.RestaurantRedisTest@61b0a2c2,
+    challenge.RestaurantRedisTest@20cfb735,
+    challenge.RestaurantRedisTest@4941b7d6,
+    challenge.RestaurantRedisTest@65dc144c,
+    challenge.RestaurantRedisTest@19e0c87,
+    challenge.RestaurantRedisTest@5c35759e,
+    challenge.RestaurantRedisTest@188e86c9,
+    challenge.RestaurantRedisTest@1d758fe0,
+    challenge.RestaurantRedisTest@6cfe52fd,
+    challenge.RestaurantRedisTest@1b905379,
+    challenge.RestaurantRedisTest@7744260c,
+    challenge.RestaurantRedisTest@467fad8b,
+    challenge.RestaurantRedisTest@58087603,
+    challenge.RestaurantRedisTest@419aede0,
+    challenge.RestaurantRedisTest@17b8c799,
+    challenge.RestaurantRedisTest@2c103310,
+    challenge.RestaurantRedisTest@37b3e0ff,
+    challenge.RestaurantRedisTest@2150fe04,
+    challenge.RestaurantRedisTest@708571b8]&gt;
+
+Path to difference: &lt;name&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;&quot;Hudson Yards-Chelsea-Flatiron-Union Square&quot;&gt;
+
+Path to difference: &lt;id&gt;
+- actual  : &lt;null&gt;
+- expected: &lt;&quot;55cb9c666c522cafdb053acc&quot;&gt;
+	at challenge.RestaurantIntegrationTest.testSavedInRedis(RestaurantIntegrationTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testLoadedFromRedis</td>
+<td class="failures">1.982s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testSavedInRedis</td>
+<td class="failures">4.241s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:12:46.929 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class challenge.RestaurantIntegrationTest]
+20:12:46.938 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:12:46.945 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:12:46.962 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [challenge.RestaurantIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:12:46.975 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [challenge.RestaurantIntegrationTest], using SpringBootContextLoader
+20:12:46.978 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [challenge.RestaurantIntegrationTest]: class path resource [challenge/RestaurantIntegrationTest-context.xml] does not exist
+20:12:46.978 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [challenge.RestaurantIntegrationTest]: class path resource [challenge/RestaurantIntegrationTestContext.groovy] does not exist
+20:12:46.978 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [challenge.RestaurantIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:12:46.979 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [challenge.RestaurantIntegrationTest]: RestaurantIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:12:47.020 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [challenge.RestaurantIntegrationTest]
+20:12:47.028 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+20:12:47.028 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+20:12:47.029 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@987767349 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_201\jre\bin, java.vm.version=25.201-b09, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, sun.java.launcher=SUN_STANDARD, user.country=BR, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\funct\codenation\java-redis, java.runtime.version=1.8.0_201-b09, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\funct\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Gradle\4.6\gradle-4.6\bin;C:\Maven\3.6.0\bin;C:\Users\funct\Downloads\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\MongoDB\Server\4.0\bin\;C:\Users\funct\AppData\Local\Microsoft\WindowsApps;;C:\Users\funct\AppData\Local\Programs\Microsoft VS Code\bin;., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\funct, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=windows-1252, java.specification.version=1.8, java.class.path=C:\Users\funct\codenation\java-redis\build\classes\java\test;C:\Users\funct\codenation\java-redis\build\resources\test;C:\Users\funct\codenation\java-redis\build\classes\java\main;C:\Users\funct\codenation\java-redis\build\resources\main;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-mongodb\2.0.6.RELEASE\8fc521182921da00cfc6e6aa7bed99993c89194b\spring-boot-starter-data-mongodb-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-redis\2.0.6.RELEASE\3a9617eddbeb6829a1878c561619dd1c674b18fc\spring-boot-starter-data-redis-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\2.0.6.RELEASE\e803fc341b450b2ce01734df12e5881b8e78c0a7\spring-boot-starter-web-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-test\2.0.6.RELEASE\f92fd015cfc9a9bd6ae653dca8d4ec5b83d4ba00\spring-boot-starter-test-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-json\2.0.6.RELEASE\1b3912af3eecdbbc6cda497acc7939f2ce21e39d\spring-boot-starter-json-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.0.6.RELEASE\9d904a4387e076343a3478c32198ec7d9d633ff4\spring-boot-starter-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\mongodb-driver\3.6.4\4ddaa4520e9b3a9255ae138f782d73432be6787d\mongodb-driver-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-mongodb\2.0.11.RELEASE\8824f5c555f21c2b80e1c277ec2c899ecf6cc31f\spring-data-mongodb-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-redis\2.0.11.RELEASE\8125839e776abd60181dc782892985b3e293aac7\spring-data-redis-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.lettuce\lettuce-core\5.0.5.RELEASE\d6263965c5dfa8c440940842e2bbfece0044b7f6\lettuce-core-5.0.5.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\2.0.6.RELEASE\64b22bc3d0ba734532e7cbe941354985f2a86242\spring-boot-starter-tomcat-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\6.0.13.Final\af4232bf90ecd33c71147d67185dbb1cfe8f33df\hibernate-validator-6.0.13.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\5.0.10.RELEASE\88a601321e2b4e3b84eed0909c24b9dd8e453b5f\spring-webmvc-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\5.0.10.RELEASE\fbaaa53ec99f45fd7aaf9125beeb5c3388cce088\spring-web-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test-autoconfigure\2.0.6.RELEASE\b0eb15474e795850dfa59b01ee6a83d7a39e3645\spring-boot-test-autoconfigure-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test\2.0.6.RELEASE\33a53ca6d55f35b3a89320c260262a5310ba8afc\spring-boot-test-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.4.0\765a4401ceb2dc8d40553c2075eb80a8fa35c2ae\json-path-2.4.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.assertj\assertj-core\3.9.1\c5ce126b15f28d56cd8f960c1a6a058b9c9aea87\assertj-core-3.9.1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\2.15.0\b84bfbbc29cd22c9529409627af6ea2897f4fa85\mockito-core-2.15.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.skyscreamer\jsonassert\1.5.0\6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3\jsonassert-1.5.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-test\5.0.10.RELEASE\1d2d272073f36c689c693ec3ec94d7ad7e136a2e\spring-test-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.0.6.RELEASE\e8c88fd703dbdf79f94178a5018ad67d1ecb1d0d\spring-boot-autoconfigure-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.0.6.RELEASE\4d214b08bbc74f03d404e8fc862102334e0f73d1\spring-boot-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-keyvalue\2.0.11.RELEASE\8b8184255b4cb2fcca8aeae956e9bd61668310a4\spring-data-keyvalue-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\5.0.10.RELEASE\55608ae84fde15eb942d675e3b1ee7d30394d4cb\spring-tx-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context-support\5.0.10.RELEASE\61b3159aceaae05118bfe2a7fcd4141921986a78\spring-context-support-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.0.10.RELEASE\6f53de0618219fefc2aebf92ba175e6b33e14ce0\spring-context-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-oxm\5.0.10.RELEASE\f6d583cbf03e625b65647ca1fc7929d5fbfe42da\spring-oxm-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.0.10.RELEASE\da65874f61aef9c25db794f493e50683346d3056\spring-aop-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\2.0.11.RELEASE\273e5cd5d6e772b5c4208b12771ed48647b2b9bb\spring-data-commons-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.0.10.RELEASE\8ec7da928082a123c50d5d70cd4b46382db27e8b\spring-beans-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.0.10.RELEASE\eaf8595e3bf18ef1aca1c233d9871552d258e38a\spring-expression-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.0.10.RELEASE\cb270a60ceb573961588f511222984de64b4bc96\spring-core-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.xmlunit\xmlunit-core\2.5.1\4ffdb346572a7356f7521cd3119ce5287d2e339d\xmlunit-core-2.5.1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.0.6.RELEASE\a730d62c8eb80cdc95e5089e47570d24731cf5dd\spring-boot-starter-logging-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.19\2d998d3d674b172a588e54ab619854d073f555b5\snakeyaml-1.19.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\mongodb-driver-core\3.6.4\6e737a5d706036bed528522d445dd2ffc454bd6b\mongodb-driver-core-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\bson\3.6.4\da7487f3cba7ddd1e0b0814005960cf543e9d8\bson-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.10.0\f7e631ccf49cfc0aefa4a2a728da7d374c05bd3c\log4j-to-slf4j-2.10.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.projectreactor\reactor-core\3.1.10.RELEASE\9c0cff4fcdb1c8680f324a4d7bda64790e60aa19\reactor-core-3.1.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.29.Final\1acf1d94799296a2517533ec75ce7e155e9c4ea7\netty-handler-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.29.Final\1651bc2e279216773c234cafe402d68d2a5adc90\netty-codec-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.29.Final\c190b90f70e2ae8a48c068afad709e8728fcaa39\netty-transport-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.29.Final\c3809f72e4b535b343b7dfa3c0c8210dad2fa5ea\netty-buffer-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.29.Final\bbec1dc913732e4773893c14d795b15d6c1e878e\netty-resolver-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-common\4.1.29.Final\a5d6a735ed07d8f197daa48db7f097cfc971ee5e\netty-common-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.9.7\98d8f190db07f97c64c0ea3af5792f718a6c2cc1\jackson-datatype-jdk8-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.9.7\cbd919f1ce67533e07b98dd493247e8dbabc26b2\jackson-datatype-jsr310-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-parameter-names\2.9.7\f2bdd7696beffa2dbc5dc62cd24c3906a40ffcff\jackson-module-parameter-names-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.9.7\e6faad47abd3179666e89068485a1b88a195ceb7\jackson-databind-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\8.5.34\5f86906367c2540b21e6aeecc277d2ce9ec939b0\tomcat-embed-websocket-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\8.5.34\a038040d68a90397f95dd1e11b979fe364a5000f\tomcat-embed-core-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\8.5.34\be71a9a5bdd001db7cf97c47429eec0bdd3b7b88\tomcat-embed-el-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\2.0.1.Final\cb855558e6271b1b32e716d24cb85c7f583ce09e\validation-api-2.0.1.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.3\7396407491352ce4fa30de92efb158adb76b5b\json-smart-2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.7.11\f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3\byte-buddy-1.7.11.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.7.11\b425a8933ca07edd03c6dbc8bc3b595fba9780de\byte-buddy-agent-1.7.11.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.6\639033469776fd37c08358c6b92a4761feb2af4b\objenesis-2.6.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.vaadin.external.google\android-json\0.0.20131108.vaadin1\fa26d351fe62a6a17f5cda1287c1c6110dec413f\android-json-0.0.20131108.vaadin1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.0.10.RELEASE\8d6a766be91ae5613f2828eb9f77739a47ceb357\spring-jcl-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.2\323964c36556eb0e6209f65c1cef72b53b461ab8\reactive-streams-1.0.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.9.0\7c10d545325e3a6e72e06381afe469fd40eb701\jackson-annotations-2.9.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.9.7\4b7f0e0dc527fab032e9800ed231080fdc3ac015\jackson-core-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.2\c592b500269bfde36096641b01238a8350f8aa31\accessors-smart-1.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.10.0\fec5797a55b786184a537abd39c3fa1449d752d6\log4j-api-2.10.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.4\da08b8cce7bbf903602a25a3a163ae252435795\asm-5.0.4.jar, user.name=funct, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3', java.home=C:\Program Files\Java\jdk1.8.0_201\jre, sun.arch.data.model=64, user.language=pt, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_201, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes, java.vendor=Oracle Corporation, org.gradle.test.worker=3, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1659346047 {name='systemEnvironment', properties={configsetroot=C:\Windows\ConfigSetRoot, USERDOMAIN_ROAMINGPROFILE=LAPTOP-PFQK1O4R, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, =ExitCode=00000000, DIRNAME=C:\Users\funct\codenation\java-redis\, USERNAME=funct, CMD_LINE_ARGS=clean test --tests challenge.RestaurantIntegrationTest, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, APP_HOME=C:\Users\funct\codenation\java-redis\, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, OneDriveConsumer=C:\Users\funct\OneDrive, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\funct, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel, M2_HOME=C:\Maven\3.6.0, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, _SKIP=2, LOCALAPPDATA=C:\Users\funct\AppData\Local, USERDOMAIN=LAPTOP-PFQK1O4R, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\LAPTOP-PFQK1O4R, JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201, PROMPT=$P$G, GRADLE_HOME=C:\Gradle\4.6\gradle-4.6, OneDrive=C:\Users\funct\OneDrive, =C:=C:\Users\funct\codenation\java-redis, APPDATA=C:\Users\funct\AppData\Roaming, JAVA_EXE=C:\Program Files\Java\jdk1.8.0_201/bin/java.exe, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Gradle\4.6\gradle-4.6\bin;C:\Maven\3.6.0\bin;C:\Users\funct\Downloads\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\MongoDB\Server\4.0\bin\;C:\Users\funct\AppData\Local\Microsoft\WindowsApps;;C:\Users\funct\AppData\Local\Programs\Microsoft VS Code\bin, OS=Windows_NT, COMPUTERNAME=LAPTOP-PFQK1O4R, PROCESSOR_REVISION=8e0a, CLASSPATH=C:\Users\funct\codenation\java-redis\\gradle\wrapper\gradle-wrapper.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, APP_BASE_NAME=gradlew, SystemRoot=C:\Windows, TEMP=C:\Users\funct\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\funct, TMP=C:\Users\funct\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=8}}]
+20:12:47.041 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [challenge/] to resources [URL [file:/C:/Users/funct/codenation/java-redis/build/classes/java/test/challenge/], URL [file:/C:/Users/funct/codenation/java-redis/build/classes/java/main/challenge/]]
+20:12:47.041 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge]
+20:12:47.041 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge] for files matching pattern [C:/Users/funct/codenation/java-redis/build/classes/java/test/challenge/*.class]
+20:12:47.045 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\Users\funct\codenation\java-redis\build\classes\java\main\challenge]
+20:12:47.045 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [C:\Users\funct\codenation\java-redis\build\classes\java\main\challenge] for files matching pattern [C:/Users/funct/codenation/java-redis/build/classes/java/main/challenge/*.class]
+20:12:47.046 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:challenge/*.class] to resources [file [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge\NeighborhoodMongoTest.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge\NeighborhoodRedisTest.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge\RestaurantIntegrationTest.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge\RestaurantMongoTest.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\test\challenge\RestaurantRedisTest.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\main\challenge\Application.class], file [C:\Users\funct\codenation\java-redis\build\classes\java\main\challenge\RestaurantController.class]]
+20:12:47.092 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\funct\codenation\java-redis\build\classes\java\main\challenge\Application.class]
+20:12:47.101 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration challenge.Application for test class challenge.RestaurantIntegrationTest
+20:12:47.218 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [challenge.RestaurantIntegrationTest]: using defaults.
+20:12:47.218 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:12:47.236 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60d9b3c0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56bb59d4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1423ca32, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@590c8b30, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74e66462, org.springframework.test.context.transaction.TransactionalTestExecutionListener@781fe6d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72e7d1b8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4f0f81df, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@88d2928, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fa36f94, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@438505c9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7037651f]
+20:12:47.241 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [challenge.RestaurantIntegrationTest]
+20:12:47.241 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [challenge.RestaurantIntegrationTest]
+20:12:47.243 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [challenge.RestaurantIntegrationTest]
+20:12:47.243 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [challenge.RestaurantIntegrationTest]
+20:12:47.244 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [challenge.RestaurantIntegrationTest]
+20:12:47.244 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [challenge.RestaurantIntegrationTest]
+20:12:47.249 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@57415d87 testClass = RestaurantIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2eed69ba testClass = RestaurantIntegrationTest, locations = '{}', classes = '{class challenge.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@72864648, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@210de54f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6ba10845, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@9230fc6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+20:12:47.249 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [challenge.RestaurantIntegrationTest]
+20:12:47.249 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [challenge.RestaurantIntegrationTest]
+20:12:47.417 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@57415d87 testClass = RestaurantIntegrationTest, testInstance = challenge.RestaurantIntegrationTest@3fc4b687, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2eed69ba testClass = RestaurantIntegrationTest, locations = '{}', classes = '{class challenge.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@72864648, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@210de54f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6ba10845, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@9230fc6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+20:12:47.442 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+20:12:47.442 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+20:12:47.442 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@128798589 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_201\jre\bin, java.vm.version=25.201-b09, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, sun.java.launcher=SUN_STANDARD, user.country=BR, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\funct\codenation\java-redis, java.runtime.version=1.8.0_201-b09, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\funct\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Gradle\4.6\gradle-4.6\bin;C:\Maven\3.6.0\bin;C:\Users\funct\Downloads\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\MongoDB\Server\4.0\bin\;C:\Users\funct\AppData\Local\Microsoft\WindowsApps;;C:\Users\funct\AppData\Local\Programs\Microsoft VS Code\bin;., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\funct, user.timezone=America/Sao_Paulo, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=windows-1252, java.specification.version=1.8, java.class.path=C:\Users\funct\codenation\java-redis\build\classes\java\test;C:\Users\funct\codenation\java-redis\build\resources\test;C:\Users\funct\codenation\java-redis\build\classes\java\main;C:\Users\funct\codenation\java-redis\build\resources\main;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-mongodb\2.0.6.RELEASE\8fc521182921da00cfc6e6aa7bed99993c89194b\spring-boot-starter-data-mongodb-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-redis\2.0.6.RELEASE\3a9617eddbeb6829a1878c561619dd1c674b18fc\spring-boot-starter-data-redis-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\2.0.6.RELEASE\e803fc341b450b2ce01734df12e5881b8e78c0a7\spring-boot-starter-web-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-test\2.0.6.RELEASE\f92fd015cfc9a9bd6ae653dca8d4ec5b83d4ba00\spring-boot-starter-test-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-json\2.0.6.RELEASE\1b3912af3eecdbbc6cda497acc7939f2ce21e39d\spring-boot-starter-json-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.0.6.RELEASE\9d904a4387e076343a3478c32198ec7d9d633ff4\spring-boot-starter-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\mongodb-driver\3.6.4\4ddaa4520e9b3a9255ae138f782d73432be6787d\mongodb-driver-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-mongodb\2.0.11.RELEASE\8824f5c555f21c2b80e1c277ec2c899ecf6cc31f\spring-data-mongodb-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-redis\2.0.11.RELEASE\8125839e776abd60181dc782892985b3e293aac7\spring-data-redis-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.lettuce\lettuce-core\5.0.5.RELEASE\d6263965c5dfa8c440940842e2bbfece0044b7f6\lettuce-core-5.0.5.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\2.0.6.RELEASE\64b22bc3d0ba734532e7cbe941354985f2a86242\spring-boot-starter-tomcat-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\6.0.13.Final\af4232bf90ecd33c71147d67185dbb1cfe8f33df\hibernate-validator-6.0.13.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\5.0.10.RELEASE\88a601321e2b4e3b84eed0909c24b9dd8e453b5f\spring-webmvc-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\5.0.10.RELEASE\fbaaa53ec99f45fd7aaf9125beeb5c3388cce088\spring-web-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test-autoconfigure\2.0.6.RELEASE\b0eb15474e795850dfa59b01ee6a83d7a39e3645\spring-boot-test-autoconfigure-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-test\2.0.6.RELEASE\33a53ca6d55f35b3a89320c260262a5310ba8afc\spring-boot-test-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.jayway.jsonpath\json-path\2.4.0\765a4401ceb2dc8d40553c2075eb80a8fa35c2ae\json-path-2.4.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.assertj\assertj-core\3.9.1\c5ce126b15f28d56cd8f960c1a6a058b9c9aea87\assertj-core-3.9.1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mockito\mockito-core\2.15.0\b84bfbbc29cd22c9529409627af6ea2897f4fa85\mockito-core-2.15.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.skyscreamer\jsonassert\1.5.0\6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3\jsonassert-1.5.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-test\5.0.10.RELEASE\1d2d272073f36c689c693ec3ec94d7ad7e136a2e\spring-test-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.0.6.RELEASE\e8c88fd703dbdf79f94178a5018ad67d1ecb1d0d\spring-boot-autoconfigure-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.0.6.RELEASE\4d214b08bbc74f03d404e8fc862102334e0f73d1\spring-boot-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-keyvalue\2.0.11.RELEASE\8b8184255b4cb2fcca8aeae956e9bd61668310a4\spring-data-keyvalue-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\5.0.10.RELEASE\55608ae84fde15eb942d675e3b1ee7d30394d4cb\spring-tx-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context-support\5.0.10.RELEASE\61b3159aceaae05118bfe2a7fcd4141921986a78\spring-context-support-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.0.10.RELEASE\6f53de0618219fefc2aebf92ba175e6b33e14ce0\spring-context-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-oxm\5.0.10.RELEASE\f6d583cbf03e625b65647ca1fc7929d5fbfe42da\spring-oxm-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.0.10.RELEASE\da65874f61aef9c25db794f493e50683346d3056\spring-aop-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\2.0.11.RELEASE\273e5cd5d6e772b5c4208b12771ed48647b2b9bb\spring-data-commons-2.0.11.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.0.10.RELEASE\8ec7da928082a123c50d5d70cd4b46382db27e8b\spring-beans-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.0.10.RELEASE\eaf8595e3bf18ef1aca1c233d9871552d258e38a\spring-expression-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.0.10.RELEASE\cb270a60ceb573961588f511222984de64b4bc96\spring-core-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.xmlunit\xmlunit-core\2.5.1\4ffdb346572a7356f7521cd3119ce5287d2e339d\xmlunit-core-2.5.1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.0.6.RELEASE\a730d62c8eb80cdc95e5089e47570d24731cf5dd\spring-boot-starter-logging-2.0.6.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.19\2d998d3d674b172a588e54ab619854d073f555b5\snakeyaml-1.19.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\mongodb-driver-core\3.6.4\6e737a5d706036bed528522d445dd2ffc454bd6b\mongodb-driver-core-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.mongodb\bson\3.6.4\da7487f3cba7ddd1e0b0814005960cf543e9d8\bson-3.6.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.10.0\f7e631ccf49cfc0aefa4a2a728da7d374c05bd3c\log4j-to-slf4j-2.10.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.projectreactor\reactor-core\3.1.10.RELEASE\9c0cff4fcdb1c8680f324a4d7bda64790e60aa19\reactor-core-3.1.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-handler\4.1.29.Final\1acf1d94799296a2517533ec75ce7e155e9c4ea7\netty-handler-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-codec\4.1.29.Final\1651bc2e279216773c234cafe402d68d2a5adc90\netty-codec-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport\4.1.29.Final\c190b90f70e2ae8a48c068afad709e8728fcaa39\netty-transport-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-buffer\4.1.29.Final\c3809f72e4b535b343b7dfa3c0c8210dad2fa5ea\netty-buffer-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-resolver\4.1.29.Final\bbec1dc913732e4773893c14d795b15d6c1e878e\netty-resolver-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\io.netty\netty-common\4.1.29.Final\a5d6a735ed07d8f197daa48db7f097cfc971ee5e\netty-common-4.1.29.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.9.7\98d8f190db07f97c64c0ea3af5792f718a6c2cc1\jackson-datatype-jdk8-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.9.7\cbd919f1ce67533e07b98dd493247e8dbabc26b2\jackson-datatype-jsr310-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-parameter-names\2.9.7\f2bdd7696beffa2dbc5dc62cd24c3906a40ffcff\jackson-module-parameter-names-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.9.7\e6faad47abd3179666e89068485a1b88a195ceb7\jackson-databind-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\8.5.34\5f86906367c2540b21e6aeecc277d2ce9ec939b0\tomcat-embed-websocket-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\8.5.34\a038040d68a90397f95dd1e11b979fe364a5000f\tomcat-embed-core-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\8.5.34\be71a9a5bdd001db7cf97c47429eec0bdd3b7b88\tomcat-embed-el-8.5.34.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\2.0.1.Final\cb855558e6271b1b32e716d24cb85c7f583ce09e\validation-api-2.0.1.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.minidev\json-smart\2.3\7396407491352ce4fa30de92efb158adb76b5b\json-smart-2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.7.11\f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3\byte-buddy-1.7.11.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.7.11\b425a8933ca07edd03c6dbc8bc3b595fba9780de\byte-buddy-agent-1.7.11.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.6\639033469776fd37c08358c6b92a4761feb2af4b\objenesis-2.6.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.vaadin.external.google\android-json\0.0.20131108.vaadin1\fa26d351fe62a6a17f5cda1287c1c6110dec413f\android-json-0.0.20131108.vaadin1.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.0.10.RELEASE\8d6a766be91ae5613f2828eb9f77739a47ceb357\spring-jcl-5.0.10.RELEASE.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.2\323964c36556eb0e6209f65c1cef72b53b461ab8\reactive-streams-1.0.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.9.0\7c10d545325e3a6e72e06381afe469fd40eb701\jackson-annotations-2.9.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.9.7\4b7f0e0dc527fab032e9800ed231080fdc3ac015\jackson-core-2.9.7.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\net.minidev\accessors-smart\1.2\c592b500269bfde36096641b01238a8350f8aa31\accessors-smart-1.2.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.10.0\fec5797a55b786184a537abd39c3fa1449d752d6\log4j-api-2.10.0.jar;C:\Users\funct\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\5.0.4\da08b8cce7bbf903602a25a3a163ae252435795\asm-5.0.4.jar, user.name=funct, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3', java.home=C:\Program Files\Java\jdk1.8.0_201\jre, sun.arch.data.model=64, user.language=pt, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_201, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes, java.vendor=Oracle Corporation, org.gradle.test.worker=3, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@202907876 {name='systemEnvironment', properties={configsetroot=C:\Windows\ConfigSetRoot, USERDOMAIN_ROAMINGPROFILE=LAPTOP-PFQK1O4R, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, =ExitCode=00000000, DIRNAME=C:\Users\funct\codenation\java-redis\, USERNAME=funct, CMD_LINE_ARGS=clean test --tests challenge.RestaurantIntegrationTest, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, APP_HOME=C:\Users\funct\codenation\java-redis\, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, OneDriveConsumer=C:\Users\funct\OneDrive, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\funct, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel, M2_HOME=C:\Maven\3.6.0, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, _SKIP=2, LOCALAPPDATA=C:\Users\funct\AppData\Local, USERDOMAIN=LAPTOP-PFQK1O4R, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\LAPTOP-PFQK1O4R, JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201, PROMPT=$P$G, GRADLE_HOME=C:\Gradle\4.6\gradle-4.6, OneDrive=C:\Users\funct\OneDrive, =C:=C:\Users\funct\codenation\java-redis, APPDATA=C:\Users\funct\AppData\Roaming, JAVA_EXE=C:\Program Files\Java\jdk1.8.0_201/bin/java.exe, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Gradle\4.6\gradle-4.6\bin;C:\Maven\3.6.0\bin;C:\Users\funct\Downloads\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\MongoDB\Server\4.0\bin\;C:\Users\funct\AppData\Local\Microsoft\WindowsApps;;C:\Users\funct\AppData\Local\Programs\Microsoft VS Code\bin, OS=Windows_NT, COMPUTERNAME=LAPTOP-PFQK1O4R, PROCESSOR_REVISION=8e0a, CLASSPATH=C:\Users\funct\codenation\java-redis\\gradle\wrapper\gradle-wrapper.jar, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, APP_BASE_NAME=gradlew, SystemRoot=C:\Windows, TEMP=C:\Users\funct\AppData\Local\Temp, HOMEDRIVE=C:, USERPROFILE=C:\Users\funct, TMP=C:\Users\funct\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=8}}]
+20:12:47.447 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'class path resource [test.properties]' with highest search precedence
+20:12:47.447 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+20:12:47.447 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+2019-02-15 20:12:47.722  INFO 14060 --- [    Test worker] challenge.RestaurantIntegrationTest      : Starting RestaurantIntegrationTest on LAPTOP-PFQK1O4R with PID 14060 (started by funct in C:\Users\funct\codenation\java-redis)
+2019-02-15 20:12:47.724  INFO 14060 --- [    Test worker] challenge.RestaurantIntegrationTest      : No active profile set, falling back to default profiles: default
+2019-02-15 20:12:47.752  INFO 14060 --- [    Test worker] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c226851: startup date [Fri Feb 15 20:12:47 BRST 2019]; root of context hierarchy
+2019-02-15 20:12:48.424  INFO 14060 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 20:12:48.585  INFO 14060 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 20:12:48.600  INFO 14060 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface challenge.repository.NeighborhoodRepository.
+2019-02-15 20:12:48.602  INFO 14060 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface challenge.repository.RestaurantRepository.
+2019-02-15 20:12:49.558  INFO 14060 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-02-15 20:12:49.589  INFO 14060 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-15 20:12:49.589  INFO 14060 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-15 20:12:49.600  INFO 14060 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Gradle\4.6\gradle-4.6\bin;C:\Maven\3.6.0\bin;C:\Users\funct\Downloads\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\MongoDB\Server\4.0\bin\;C:\Users\funct\AppData\Local\Microsoft\WindowsApps;;C:\Users\funct\AppData\Local\Programs\Microsoft VS Code\bin;.]
+2019-02-15 20:12:49.721  INFO 14060 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-15 20:12:49.721  INFO 14060 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1972 ms
+2019-02-15 20:12:49.813  INFO 14060 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-02-15 20:12:49.818  INFO 14060 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 20:12:49.818  INFO 14060 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 20:12:49.818  INFO 14060 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 20:12:49.818  INFO 14060 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 20:12:50.338  INFO 14060 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-02-15 20:12:50.436  INFO 14060 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:274}] to localhost:27017
+2019-02-15 20:12:50.441  INFO 14060 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3194878}
+2019-02-15 20:12:50.728  INFO 14060 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:275}] to localhost:27017
+2019-02-15 20:12:53.014  INFO 14060 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 20:12:53.423  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c226851: startup date [Fri Feb 15 20:12:47 BRST 2019]; root of context hierarchy
+2019-02-15 20:12:53.530  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/restaurants],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; challenge.RestaurantController.findRestaurants()
+2019-02-15 20:12:53.532  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/neighborhood],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; challenge.RestaurantController.findNeighborhood()
+2019-02-15 20:12:53.533  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/restaurants/findInNeighborhood],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; challenge.RestaurantController.findInNeighborhood(java.lang.Double,java.lang.Double)
+2019-02-15 20:12:53.533  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/restaurants/near],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; challenge.RestaurantController.findRestaurantsNear(java.lang.Double,java.lang.Double)
+2019-02-15 20:12:53.537  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 20:12:53.538  INFO 14060 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 20:12:53.592  INFO 14060 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 20:12:53.592  INFO 14060 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 20:12:54.000  INFO 14060 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51337 (http) with context path ''
+2019-02-15 20:12:54.005  INFO 14060 --- [    Test worker] challenge.RestaurantIntegrationTest      : Started RestaurantIntegrationTest in 6.553 seconds (JVM running for 7.822)
+2019-02-15 20:12:56.962  INFO 14060 --- [    Test worker] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-02-15 20:12:56.964  INFO 14060 --- [    Test worker] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-02-15 20:12:57.501  INFO 14060 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-15 20:12:57.502  INFO 14060 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 20:12:57.533  INFO 14060 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-02-15 20:12:57.834 ERROR 14060 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.mongodb.UncategorizedMongoDbException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017; nested exception is com.mongodb.MongoQueryException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017] with root cause
+
+com.mongodb.MongoQueryException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017
+	at com.mongodb.operation.FindOperation$1.call(FindOperation.java:722) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation$1.call(FindOperation.java:711) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:471) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:415) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:711) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:83) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.Mongo$3.execute(Mongo.java:826) ~[mongodb-driver-3.6.4.jar:na]
+	at com.mongodb.MongoIterableImpl.execute(MongoIterableImpl.java:130) ~[mongodb-driver-3.6.4.jar:na]
+	at com.mongodb.MongoIterableImpl.iterator(MongoIterableImpl.java:77) ~[mongodb-driver-3.6.4.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2457) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2282) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.doFind(ExecutableFindOperationSupport.java:213) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.all(ExecutableFindOperationSupport.java:169) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.lambda$getExecution$1(AbstractMongoQuery.java:113) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:97) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:602) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:590) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy94.findByGeometryNear(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy94.findByGeometryNear(Unknown Source) ~[na:na]
+	at challenge.service.NeighborhoodServiceImpl.getNear(NeighborhoodServiceImpl.java:25) ~[main/:na]
+	at challenge.service.RestaurantServiceImpl.findInNeighborhood(RestaurantServiceImpl.java:33) ~[main/:na]
+	at challenge.RestaurantController.findInNeighborhood(RestaurantController.java:22) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-02-15 20:13:00.229 ERROR 14060 --- [o-auto-1-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.mongodb.UncategorizedMongoDbException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017; nested exception is com.mongodb.MongoQueryException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017] with root cause
+
+com.mongodb.MongoQueryException: Query failed with error code 2 and error message 'error processing query: ns=test.neighborhoodTree: GEONEAR  field=geometry maxdist=1.79769e+308 isNearSphere=1
+Sort: {}
+Proj: {}
+ planner returned error: unable to find index for $geoNear query' on server localhost:27017
+	at com.mongodb.operation.FindOperation$1.call(FindOperation.java:722) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation$1.call(FindOperation.java:711) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:471) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:415) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:711) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.operation.FindOperation.execute(FindOperation.java:83) ~[mongodb-driver-core-3.6.4.jar:na]
+	at com.mongodb.Mongo$3.execute(Mongo.java:826) ~[mongodb-driver-3.6.4.jar:na]
+	at com.mongodb.MongoIterableImpl.execute(MongoIterableImpl.java:130) ~[mongodb-driver-3.6.4.jar:na]
+	at com.mongodb.MongoIterableImpl.iterator(MongoIterableImpl.java:77) ~[mongodb-driver-3.6.4.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2457) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.doFind(MongoTemplate.java:2282) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.doFind(ExecutableFindOperationSupport.java:213) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.core.ExecutableFindOperationSupport$ExecutableFindSupport.all(ExecutableFindOperationSupport.java:169) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.lambda$getExecution$1(AbstractMongoQuery.java:113) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mongodb.repository.query.AbstractMongoQuery.execute(AbstractMongoQuery.java:97) ~[spring-data-mongodb-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:602) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:590) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy94.findByGeometryNear(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy94.findByGeometryNear(Unknown Source) ~[na:na]
+	at challenge.service.NeighborhoodServiceImpl.getNear(NeighborhoodServiceImpl.java:25) ~[main/:na]
+	at challenge.service.RestaurantServiceImpl.findInNeighborhood(RestaurantServiceImpl.java:33) ~[main/:na]
+	at challenge.RestaurantController.findInNeighborhood(RestaurantController.java:22) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at 15/02/2019 20:13:01</p>
+</div>
+</div>
+</body>
+</html>
